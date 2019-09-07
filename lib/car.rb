@@ -7,16 +7,16 @@
 # of a Car and change its color.
 
 class Car
-    attr_accessor :color, :driver
+  attr_accessor :color, :driver
 
-    def initialize
-        @color = 'blue'
-        @driver = 1
-    end
+  def initialize(color, driver)
+    @color = color
+    @driver = driver
+  end
 
-    def change_color(color)
-        @color = color
-    end
+  def change_color(color)
+    @color = color
+  end
 
 end
 
@@ -27,4 +27,3 @@ end
 # * Create a unit test for our Car class to test our “painting” method.
 # * A car should have a driver. Create an instance_double Driver.  Write a second test
 #  for this and make it pass.
-
